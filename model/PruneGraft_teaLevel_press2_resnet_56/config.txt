@@ -1,0 +1,26 @@
+print("超参数")
+CLASSES = 9
+lr_type = 'step'
+epochs = 300
+batch_size=  256
+no_graft = False
+learning_rate = 0.01
+momentum = 0.9
+# 0.006
+weight_decay = 0.005
+label_smooth = 0.1 
+lr_decay_step = '150,225'
+
+best_acc = 0
+# "mobilenet_v2" "resnet_56" "vgg"
+arch = "resnet_56"
+# "[0.]+[0.4]*2+[0.5]*9+[0.6]*9+[0.7]*9" “[0.]+[0.15]*2+[0.4]*27”"'[0.]+[0.18]*29'"
+compress_rate = "[0.]+[0.15]*2+[0.4]*27"
+# "./data/model/Hrank_preTrain/cifar-10/resnet_56.pt.pt"
+pretrain_dir = "./data/model/Hrank_preTrain/teaLevel/resnet_56_teaLevel.t7"
+save_dir = "PruneGraft_teaLevel_press2_"+arch
+data_dir = "./data/teaLevel/singleLeaf/"
+rank_conv_dir = "./data/model/rank_conv/teaLevel/resnet_56_limit5/"
+print(save_dir)
+
+muti_net = False
