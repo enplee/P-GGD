@@ -1,4 +1,4 @@
-# Filter Grafting for Deep Neural Networks
+# P&GGD for Deep Neural Networks
 
 ## Introduction
 
